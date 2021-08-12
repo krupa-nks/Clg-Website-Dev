@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+	.carousel-item {
+  height: 97vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #39c437;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.parallax {
+  /* The image used */
+  background-image: url("33.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Bootstrap 4 Responsive Layout Example</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.tidio.co/9plqesu1lnlezdkmcdjw8mur2briucdy.js"></script>
+
+</head>
+<body >
+	<p >
+
+
+	
+	<nav  class="navbar navbar-expand-lg navbar-light bg-light fixed-top"style="background:#2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; width: 100%;">
+  <div style="background:  #2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; class="container">
+     
+    <button style="position: relative;width: 100%;max-height: 70%"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="4.jpg" style="width:13%; height:13%;position: relative;">
+          <span class="navbar-toggler-icon" style="float: right;"></span>
+
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    	<img src="4.jpg" style="width:13%; height:13%;position: relative;"href="index.html">
+    	
+
+   <li style="padding-right: 5%;" class="nav-item">
+
+  <div class="dropdown" style="padding-left:700px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Acadamics</button>
+  <div class="dropdown-content">
+    <a href="school1.html">School</a>
+    <a href="FFCS.html">FFCS</a>
+    <a href="caltech.html">CALTech</a>
+    <a href="faculty.html">Faculty</a>
+
+</div>
+
+
+
+        </li><li class="nav-item">
+
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Admissions</button>
+  <div class="dropdown-content">
+    <a href="course.html">Courses Offered</a>
+    <a href="ITP.html">ITP</a>
+
+</div>
+
+
+        </li><li class="nav-item">
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">In Campus</button>
+  <div class="dropdown-content">
+    <a href="sports.html">Events</a>
+    <a href="library.html">Library</a>
+  
+
+</div>
+
+
+        </li> </li><li class="nav-item">
+   <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">About Us</button>
+  <div class="dropdown-content">
+    
+    <a href="ourvision.html">Our Vision</a>
+    <a href="ourmission.html">Our Mission</a>
+    <a href="Infrastucture.html">Infrastucture</a>
+    <a href="Location.html">Location</a>
+
+</div>
+
+
+ </li><li class="nav-item">
+
+
+  <div class="dropdown" style="padding-left: 10px; padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Placements</button>
+  <div class="dropdown-content">
+    <a href="placement.html">Placement Info</a>
+    
+
+</div>
+
+</div>
+
+
+
+
+        </li>
+    </p>
+      </ul>
+    </div>
+  </div>
+</nav></li></div></li></div></li></div></li></ul></div></div></nav>
+</p>
+<div class="container">
+	
+  <br><br><br><br><br>
+
+   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+  .carousel-item {
+  height: 97vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #39c437;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.parallax {
+  /* The image used */
+  background-image: url("33.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Bootstrap 4 Responsive Layout Example</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.tidio.co/9plqesu1lnlezdkmcdjw8mur2briucdy.js"></script>
+
+</head>
+<body >
+  <p >
+
+
+  
+  <nav  class="navbar navbar-expand-lg navbar-light bg-light fixed-top"style="background:#2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; width: 100%;">
+  <div style="background:  #2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; class="container">
+     
+    <button style="position: relative;width: 100%;max-height: 70%"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="4.jpg" style="width:13%; height:13%;position: relative;">
+          <span class="navbar-toggler-icon" style="float: right;"></span>
+
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <img src="4.jpg" style="width:13%; height:13%;position: relative;"href="index.html">
+      
+
+   <li style="padding-right: 5%;" class="nav-item">
+
+  <div class="dropdown" style="padding-left:700px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Acadamics</button>
+  <div class="dropdown-content">
+    <a href="school1.html">School</a>
+    <a href="FFCS.html">FFCS</a>
+    <a href="caltech.html">CALTech</a>
+    <a href="#">Faculty</a>
+
+</div>
+
+
+
+        </li><li class="nav-item">
+
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Admissions</button>
+  <div class="dropdown-content">
+    <a href="course.html">Cources Offered</a>
+    <a href="ITP.html">ITP</a>
+
+</div>
+
+
+        </li><li class="nav-item">
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">In Campus</button>
+  <div class="dropdown-content">
+    <a href="#">Events</a>
+    <a href="library.html">Library</a>
+    <a href="#">Student Housing</a>
+     <a href="sports.html">Sports</a>
+
+</div>
+
+
+        </li> </li><li class="nav-item">
+   <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">About Us</button>
+  <div class="dropdown-content">
+    
+    <a href="ourvision.html">Our Vision</a>
+    <a href="ourmission.html">Our Mission</a>
+    <a href="infra.html">Infrastucture</a>
+    <a href="Location.html">Location</a>
+
+</div>
+
+
+ </li><li class="nav-item">
+
+
+  <div class="dropdown" style="padding-left: 10px; padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Placements</button>
+  <div class="dropdown-content">
+    <a href="placement.html">Placement Info</a>
+    
+
+</div>
+
+</div>
+
+
+
+
+        </li>
+    </p>
+      </ul>
+    </div>
+  </div>
+</nav></li></div></li></div></li></div></li></ul></div></div></nav>
+</p>
+<div class="container">
+  
+ 
+
+   
+<p style=" font-size: 20px; font-family: sans-serif;color:#2eb82e;padding-left: 38% "> Infrastructure</p>
+
+<h4> <br>  The new campus will house smart class rooms, dedicated laboratories for pervasive experimentation and deployment of ambient and ubiquitous technologies in all branches of study offered.
+
+1. Studio Classrooms <br>
+2. Faculty Cabin <br>
+3. Vice-Chancellor's Office<br>
+4. Registrar's Office <br>
+5. Controller of Examination's Office<br>
+6. Indian Bank with ATM <br>
+7. Convenience store <br>
+8. Cafeteria <br>
+9. Auditorium <br>
+10. Central Library <br>
+11. SDC (software development cell) <br>
+12. Administrative office <br>
+13. Physics Laboratory <br>
+14. Chemistry Laboratory <br>
+15. Basket ball court <br>
+16. Girls Hostel <br>
+17. Boys Hostel <br>
+18. Admissions office <br>
+19. Conference room <br>
+20. Finance office <br>
+21. Gymnasium <br>
+ </h4> 
+  <br><br><br>
+
+  
+</div>
+
+
+</body>
+
+<footer class="page-footer" style="background:#2eb82e; height: 100%; width: 100%;margin: 0;padding:0;">
+    <br>
+    <div class="divider divider-blue divider-margin-top"></div>
+   
+    <br>
+    <div class="row" style="display: flex; flex-wrap: wrap; margin-right: 5px; margin-left: 5px; box-sizing: border-box;">
+    
+     <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 5%; box-sizing: border-box;">
+    <h5 class="white-text">Contact Us</h5>
+              <ul>
+              <li class="white-text footer-lighten-text"><i class="mdi-image-landscape  white-text"></i><b>&nbsp;University Address</b></li>
+              <li class="white-text footer-lighten-text">VIT Bhopal<br>Bhopal-Indore Highway<br>Kothrikalan, Sehore<br>Madhya Pradesh - 466114</li>
+              <br>
+            
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> admissions@vitbhopal.ac.in</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> warden.lh@vitbhopal.ac.in (For Ladies' hostel)</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> warden.mh@vitbhopal.ac.in (For Men's hostel)</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-image-landscape  white-text"></i> Phone: +91 75 6025 4500 / 501 / 502</li>
+              </ul></div>
+    
+    <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 20px ; padding-left: 10%; box-sizing: border-box;">
+    <img alt="Test" height="300" width="300" src="2.png"></div>
+    
+   
+    <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 5%; box-sizing: border-box;">
+    <h5 class="white-text connect-font-weight">CONNECT WITH US</h5><br> <a href="https://www.facebook.com/VITunivBhopal/" target="_blank" class="hvr-grow"><img style=" width: 10%;"alt="test"src="5.png" class="social-media-img-align"></a>
+    <a href="https://www.youtube.com/channel/UC6ft0AFfUAEa9tmvBWtcy4Q" target="_blank" class="hvr-grow"><img style=" width: 10%;"alt="test"src="8.jpg" class="social-media-img-align"></a><a href="https://twitter.com/VITBhopal" target="_blank" class="hvr-grow"><img style=" width: 10%;" alt="test"src="7.png" class="social-media-img-align"></a><a href="https://www.instagram.com/vit.bhopal/?hl=en" target="_blank" class="hvr-grow"><img style=" width: 10%;" alt="test"src="6.png" class="social-media-img-align"></a></div>  
+    
+              
+    </div>
+    <div class="footer-copyright" >
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: 10px; margin-left: 20px; box-sizing: border-box;">
+       
+          
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="grey-text text-lighten-3" href=""></a>
+            
+     </div>
+     </div>
+     </div>
+
+</footer>
+
+
+</html>
+  
+</div>
+
+

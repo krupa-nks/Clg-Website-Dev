@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+  html {
+  scroll-behavior: smooth;
+  }
+  .carousel-item {
+  height: 97vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #39c437;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.parallax {
+  /* The image used */
+  background-image: url("33.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Bootstrap 4 Responsive Layout Example</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.tidio.co/9plqesu1lnlezdkmcdjw8mur2briucdy.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+<body >
+  <p >
+
+
+  
+  <nav  class="navbar navbar-expand-lg navbar-light bg-light fixed-top"style="background:#2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; width: 100%;">
+  <div style="background:  #2eb82e;padding-left: 0px; padding-right: 0px; padding-top:0px; padding-bottom: 0px; class="container">
+     
+    <button style="position: relative;width: 100%;max-height: 70%"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="4.jpg" style="width:13%; height:13%;position: relative;">
+          <span class="navbar-toggler-icon" style="float: right;"></span>
+
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <img src="4.jpg" style="width:13%; height:13%;position: relative;"href="index.html">
+      
+    
+
+   <li style="padding-right: 5%;" class="nav-item">
+
+  <div class="dropdown" style="padding-left:700px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Acadamics</button>
+  <div class="dropdown-content">
+  	 <a href="school.html">School</a>
+    <a href="FFCS.html">FFCS</a>
+    <a href="caltech.html">CALTech</a>
+    <a href="faculty.html">Faculty</a>
+
+</div>
+
+
+
+        </li><li class="nav-item">
+
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Admissions</button>
+  <div class="dropdown-content">
+    <a href="course.html">Courses Offered</a>
+    <a href="ITP.html">ITP</a>
+
+</div>
+
+
+        </li><li class="nav-item">
+  <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">In Campus</button>
+  <div class="dropdown-content">
+    <a href="sports.html">Events</a>
+    <a href="library.html">Library</a>
+ 
+
+</div>
+
+
+        </li> </li><li class="nav-item">
+   <div class="dropdown" style="padding-left: 10px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">About Us</button>
+  <div class="dropdown-content">
+    <a href="About.html">About VIT Bhopal</a>
+    <a href="ourvision.html">Our Vision</a>
+    <a href="ourmission.html">Our Mission</a>
+    <a href="infra.html">Infrastucture</a>
+    <a href="Location.html">Location</a>
+
+</div>
+
+
+ </li><li class="nav-item">
+
+
+  <div class="dropdown" style="padding-left: 10px; padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn">Placements</button>
+  <div class="dropdown-content">
+    <a href="placement.html">Placement Info</a>
+    
+
+</div>
+
+</div>
+
+
+
+
+        </li>
+    </p>
+      </ul>
+    </div>
+  </div>
+</nav></li></div></li></div></li></div></li></ul></div></div></nav>
+</p>
+<div class="container">
+  
+  <br><br><br><br><br>
+
+    <p style=" font-size: 28px; font-family: sans-serif;color:#2eb82e;padding-left: 28% "> School of Computer Science and Engineering (SCSE)</p>
+
+  <br><br>
+    <p style=" font-size: 20px; font-family: sans-serif;color:#2eb82e;padding-left: 38% "> Undergraduate Programs</p>
+
+  <br><br>
+
+  <div id="home"class="dropdown" style="padding-left:10%;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section1" >B.Tech., Computer Science and Engineering </button>
+</div>
+
+   <div id="home"class="dropdown" style="padding-left:300px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section2">B.Tech., Gaming Technology</button>
+</div>
+<br>
+<div id="home"class="dropdown" style="padding-left:10%;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section1" >B.Tech., Cyber Security and Digital Forensics </button>
+</div>
+
+   <div id="home"class="dropdown" style="padding-left:300px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section2">B.Tech., Data Analysis</button>
+</div>
+<br><br><br><br>
+    <p style=" font-size: 20px; font-family: sans-serif;color:#2eb82e;padding-left: 38% "> Postgraduate Programs</p>
+
+<br><br>
+<div id="home"class="dropdown" style="padding-left:10%;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section1" >Master of Computer Applications </button>
+</div>
+
+   <div id="home"class="dropdown" style="padding-left:300px;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section2">Master of Cyber Security and Digital Forensics</button>
+</div>
+<br>
+<div id="home"class="dropdown" style="padding-left:25%;padding-bottom: 5px;padding-top: 20px;">
+  <button class="dropbtn" href="Section1" >Integrated., Master of Artificial Intelligence and Machine Learning </button>
+</div>
+
+  <br><br><br>
+
+<button type="button" class="block" id="Section1"style="padding-left: 2%; color: white;background-color:#2eb82e; ">Undergraduate programmes</button>
+<div>
+  <br><br>
+  <p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Program Educational objectives</p><br>
+>>Graduates will be engineering practitioners and leaders, who would help solve industry's technological problems.<br>
+>>Graduates will be engineering professionals, innovators or entrepreneurs engaged in technology development, technology deployment, or engineering system implementation in industry.<br>
+>>Graduates will function in their profession with social awareness and responsibility.<br>
+>>Graduates will interact with their peers in other disciplines in industry and society and contribute to the economic growth of the country.<br><br>
+>>Graduates will be successful in pursuing higher studies in engineering or management.<br>
+>>Graduates will pursue career paths in teaching or research.<br>
+<p style="color:#2eb82e; padding-left: 5px; font-size: 16px;">Scope of Employment</p><br>
+>>In Electrical Power Generation, Automotive and Control Industries, Mining and allied Industries, Instrumentation and Software Industries, as well as in Manufacturing, Marketing and Business Management Industries.<br>
+>>In the public sectors, in the steel industries, oil and natural gas industries, Railways, and companies such as BHEL, NTPC, ABB, Siemens, National Instruments, DRDO and other Government Organisations.<br>
+>>Other industries such as IBM, Honeywell, Intel, Schneider Electric, Siemens, Texas Instruments, General Electric, National Instruments, Microsoft, Yahoo, Ericsson, L&T, Mahindra and Mahindra, Alcatel Lucent, Bosch, Tata Motors, Philips along with other Software and core companies.<br>
+<p style="color:#2eb82e; padding-left: 5px; font-size: 16px; ">Program Content<br>
+Core Courses</p><br>
+>>Electrical Networks / Electrical Machines / Electronic Devices & Circuits / Electromagnetic Field Theory / Electrical Engineering Materials / Linear Integrated Circuits / Digital Electronics / Control Systems / Fluid Mechanics & Thermal Engineering / Digital Signal Processing / Microprocessor and Microcontroller / Object-oriented Programming in C++/ Data Structures & Algorithms / Measurement and Instrumentation / Communication Engineering / Project Planning & Management / Power Systems and Automation/ Protection and Switchgear/ Control and Instrumentation / Power Electronics/ Advanced Microcontroller / Power Quality & Energy Management.<br> 
+<p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Elective Courses</p> 
+>>High Voltage Engineering / Digital Signal Processing / RPC & Facts Controller / Power System Dynamics / Computer Graphics / Artificial Intelligence and Expert Systems / Embedded System.
+>>Student Outcomes<br>
+>>An ability to apply knowledge of mathematics, science, and engineering<br>
+>>An ability to design and conduct experiments, as well as to analyze and interpret data<br>
+>>An ability to design a system, component, or process to meet desired needs within realistic constraints such as economic, environmental, social, political, ethical, health care and safety, manufacturability, and sustainability<br>
+>>An ability to function on multidisciplinary teams<br>
+>>An ability to identify, formulate, and solve engineering problems<br>
+>>An understanding of professional and ethical responsibility<br>
+>>An ability to communicate effectively<br>
+>>The broad education necessary to understand the impact of engineering solutions in a global, economic, environmental, and societal context<br>
+>>A recognition of the need for, and an ability to engage in research and to involve in life-long learning<br>
+>>A knowledge of contemporary issues<br>
+>>An ability to use the techniques, skills, and modern engineering tools necessary for engineering practice.<br>
+
+
+</div>
+
+
+<br><br><br>
+<button type="button" class="block" id="Section2"style="padding-left: 2%; color: white;background-color:#2eb82e; ">Postgraduate Programme</button>
+<div>
+    <br><br>
+    <p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Program Educational objectives<br></p>
+>>Graduates will be engineering practitioners and leaders, who would help solve industry's technological problems.<br>
+>>Graduates will be engineering professionals, innovators or entrepreneurs engaged in technology development, technology deployment, or engineering system implementation in industry.<br>
+>>Graduates will function in their profession with social awareness and responsibility.<br>
+>>Graduates will interact with their peers in other disciplines in industry and society and contribute to the economic growth of the country.<br>
+>>Graduates will be successful in pursuing higher studies in engineering or management.<br>
+>>Graduates will pursue career paths in teaching or research.<br>
+<p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Scope of Employment<br></p>
+>>Industries involving Wireless Communications and Signal Processing, Micro / Nanoelectronics, Lasers and Optics, Electronic Devices, Telecommunications, Nanotechnology, Robotics, Information Systems, Power Systems, Computer Software- Hardware Integration, Control Systems, and other Advanced Technologies.<br>
+>>Placement in leading core communication companies like BSNL, MTNL, Reliance Communications, Tata Telecomm, Hutch, Bharti Telecom, Airtel, Nokia, CISCO, IBM, Intel, Agilent, Alcatel, AT&T, 
+Ericsson, Honeywell, Bosch, National Instruments, IBM, Texas Instruments, HCL and others.<br>
+<p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Program Content<br></p>
+<p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Core Courses<br></p>
+>>Fundamentals of Electrical Engineering / Electron Devices and Circuits / Data Structures and Algorithms / Network Theory / Signals and systems / Probability Theory and Random Process/ Analog Electronic Circuits / Analog Circuit Design/ Modulation Techniques/ Engineering Electromagnetic / Digital logic Design / Digital Signal Processing / Microcontroller and Applications / Antennas and Wave Propagation / Digital Communication / Information Theory and Coding / Computer Communication / Optical Communication and Networks/ Microwave Engineering / VLSI System Design / Wireless and Mobile Communication / Control Systems / Transmission Lines and Fields / Workshop Practice / Engineering Graphics/Material Science / Differential and Difference Equations /Complex Variables and Partial Differential Equations.<br>
+<p style="color:#2eb82e; padding-left: 5px;font-size: 16px; ">Elective Courses <br></p>
+>>Electrical and Electronic Measurements / Computer Organization and Architecture / Digital Image Processing / Bio-medical Instrumentation and Analysis / Satellite Communication/ Embedded System Design / Radar and Navigational Aids / Introduction to Nanoscience & Nanotechnology / Neural Networks & Fuzzy Control / Digital System Design / Micro and Smart Systems Technology / Wireless Sensor Networks / Advanced Microcontrollers (ARM,DSP) / Opto Electronics / Applied Numerical Methods.<br>
+Student Outcomes<br>
+>>An ability to apply knowledge of mathematics, science, and engineering<br>
+>>An ability to design and conduct experiments, as well as to analyze and interpret data<br>
+>>An ability to design a system, component, or process to meet desired needs within realistic constraints such as economic, environmental, social, political, ethical, health care and safety, manufacturability, and sustainability<br>
+>>An ability to function on multidisciplinary teams<br>
+>>An ability to identify, formulate, and solve engineering problems<br>
+>>An understanding of professional and ethical responsibility<br>
+>>An ability to communicate effectively<br>
+>>The broad education necessary to understand the impact of engineering solutions in a global, economic, environmental, and societal context<br>
+>>A recognition of the need for, and an ability to engage in research and to involve in life-long learning<br>
+>>A knowledge of contemporary issues<br>
+>>An ability to use the techniques, skills, and modern engineering tools necessary for engineering practice.<br>
+  
+</div>
+
+
+
+<br><br><br>
+
+
+</div>
+
+
+</body>
+
+<footer class="page-footer" style="background:#2eb82e; height: 100%; width: 100%;margin: 0;padding:0;">
+    <br>
+    <div class="divider divider-blue divider-margin-top"></div>
+   
+    <br>
+    <div class="row" style="display: flex; flex-wrap: wrap; margin-right: 5px; margin-left: 5px; box-sizing: border-box;">
+    
+     <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 5%; box-sizing: border-box;">
+    <h5 class="white-text">Contact Us</h5>
+              <ul>
+              <li class="white-text footer-lighten-text"><i class="mdi-image-landscape  white-text"></i><b>&nbsp;University Address</b></li>
+              <li class="white-text footer-lighten-text">VIT Bhopal<br>Bhopal-Indore Highway<br>Kothrikalan, Sehore<br>Madhya Pradesh - 466114</li>
+              <br>
+            
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> admissions@vitbhopal.ac.in</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> warden.lh@vitbhopal.ac.in (For Ladies' hostel)</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> warden.mh@vitbhopal.ac.in (For Men's hostel)</li>
+              <li class="white-text footer-lighten-text"><i class="mdi-image-landscape  white-text"></i> Phone: +91 75 6025 4500 / 501 / 502</li>
+              </ul></div>
+    
+    <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 20px ; padding-left: 10%; box-sizing: border-box;">
+    <img alt="Test" height="300" width="300" src="2.png"></div>
+    
+   
+    <div class="col-sm" style="flex-basis: 0; -webkit-box-flex: 1; flex-grow: 1; max-width: 100%; position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 5%; box-sizing: border-box;">
+    <h5 class="white-text connect-font-weight">CONNECT WITH US</h5><br> <a href="https://www.facebook.com/VITunivBhopal/" target="_blank" class="hvr-grow"><img style=" width: 10%;"alt="test"src="5.png" class="social-media-img-align"></a>
+    <a href="https://www.youtube.com/channel/UC6ft0AFfUAEa9tmvBWtcy4Q" target="_blank" class="hvr-grow"><img style=" width: 10%;"alt="test"src="8.jpg" class="social-media-img-align"></a><a href="https://twitter.com/VITBhopal" target="_blank" class="hvr-grow"><img style=" width: 10%;" alt="test"src="7.png" class="social-media-img-align"></a><a href="https://www.instagram.com/vit.bhopal/?hl=en" target="_blank" class="hvr-grow"><img style=" width: 10%;" alt="test"src="6.png" class="social-media-img-align"></a></div>  
+    
+              
+    </div>
+    <div class="footer-copyright" >
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: 10px; margin-left: 20px; box-sizing: border-box;">
+       
+          
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="grey-text text-lighten-3" href=""></a>
+            
+     </div>
+     </div>
+     </div>
+
+</footer>
+
+
+</html>
